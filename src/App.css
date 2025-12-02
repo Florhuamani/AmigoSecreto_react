@@ -1,0 +1,82 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #f1ea85, #764ba2); min-height: 100vh; }
+
+.amigo-secreto { max-width: 900px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; color: white; padding: 40px 20px; }
+.header h1 { font-size: 3em; margin-bottom: 10px; }
+.subtitle { font-style: italic; opacity: 0.9; }
+
+.container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+
+.panel {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-nombre {
+  width: 70%;
+  padding: 15px;
+  font-size: 1.1em;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+}
+
+.btn-agregar {
+  width: 28%;
+  padding: 15px;
+  background: #ddc88f;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.fecha { margin: 30px 0; text-align: center; }
+.fecha input { padding: 10px; font-size: 1.1em; }
+.fecha-texto { margin-top: 10px; font-weight: bold; color: #e9ee9d; }
+
+.lista { list-style: none; margin: 20px 0; }
+.lista li { padding: 12px; background: #f0f0ff; margin: 8px 0; border-radius: 10px; }
+
+.botones { display: flex; gap: 15px; margin-top: 30px; }
+.btn-sortear, .btn-reiniciar {
+  flex: 1;
+  padding: 18px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-sortear { background: #e0db8e; color: white; }
+.btn-reiniciar { background: #ecf3ab; }
+
+.resultado {
+  background: rgba(255,255,255,0.95);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  animation: aparecer 0.8s ease-out;
+}
+.pareja {
+  font-size: 1.4em;
+  margin: 20px 0;
+  padding: 15px;
+  background: #fff3cd;
+  border-radius: 15px;
+  border-left: 8px solid #ffd43b;
+}
+.btn-cerrar { margin-top: 30px; padding: 15px 30px; background: #666; color: white; border-radius: 12px; }
+
+footer { text-align: center; color: white; margin-top: 50px; font-style: italic; opacity: 0.8; }
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
