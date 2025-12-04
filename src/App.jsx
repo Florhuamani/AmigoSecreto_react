@@ -122,7 +122,7 @@ function App() {
       </div>
 
       <footer>
-        Avance, el jueves se entrega completo
+        AmigoSecreto Finalizado
       </footer>
     </div>
   );

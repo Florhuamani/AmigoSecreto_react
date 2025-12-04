@@ -1,12 +1,15 @@
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #f1ea85, #764ba2); min-height: 100vh; }
+* { margin:0; padding:0; box-sizing:border-box; justify-content: center; }
+body { font-family: 'Segoe UI', sans-serif; 
+  background: linear-gradient(135deg, #f1ea85, #764ba2); 
+  background-image: url(./assets/fondo.jpg);
+  min-height: 100vh; }
 
 .amigo-secreto { max-width: 900px; margin: 0 auto; padding: 20px; }
 .header { text-align: center; color: white; padding: 40px 20px; }
 .header h1 { font-size: 3em; margin-bottom: 10px; }
 .subtitle { font-style: italic; opacity: 0.9; }
 
-.container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+.container { display: flex; flex-wrap: wrap; gap: 30px; ; }
 
 .panel {
   background: white;
@@ -15,6 +18,7 @@ body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, 
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
   width: 100%;
   max-width: 500px;
+  margin-top: 0px;
 }
 
 .input-nombre {
@@ -28,20 +32,22 @@ body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, 
 .btn-agregar {
   width: 28%;
   padding: 15px;
-  background: #ddc88f;
-  color: white;
+  background: #d3b668;
+  color: rgb(27, 23, 23);
   border: none;
   border-radius: 12px;
   font-size: 1.1em;
   cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-.fecha { margin: 30px 0; text-align: center; }
-.fecha input { padding: 10px; font-size: 1.1em; }
-.fecha-texto { margin-top: 10px; font-weight: bold; color: #e9ee9d; }
+.fecha { margin: 20px 0; text-align: center; }
+.fecha input { padding: 10px; font-size: 1.1em; margin-left: 5px; }
+.fecha-texto { margin-top: 10px; font-weight: bold; color: #0d0e0d; }
 
 .lista { list-style: none; margin: 20px 0; }
-.lista li { padding: 12px; background: #f0f0ff; margin: 8px 0; border-radius: 10px; }
+.lista li { padding: 12px; background: #f1e4a9; margin: 8px 0; border-radius: 10px; }
 
 .botones { display: flex; gap: 15px; margin-top: 30px; }
 .btn-sortear, .btn-reiniciar {
@@ -53,8 +59,8 @@ body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, 
   cursor: pointer;
   font-weight: bold;
 }
-.btn-sortear { background: #e0db8e; color: white; }
-.btn-reiniciar { background: #ecf3ab; }
+.btn-sortear { background: #d3b668; color: rgb(20, 20, 20); }
+.btn-reiniciar { background: #d3b668; }
 
 .resultado {
   background: rgba(255,255,255,0.95);
@@ -68,13 +74,13 @@ body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, 
   font-size: 1.4em;
   margin: 20px 0;
   padding: 15px;
-  background: #fff3cd;
+  background: #f7e8b6;
   border-radius: 15px;
-  border-left: 8px solid #ffd43b;
+  border-left: 8px solid #f3db86;
 }
-.btn-cerrar { margin-top: 30px; padding: 15px 30px; background: #666; color: white; border-radius: 12px; }
+.btn-cerrar { margin-top: 30px; padding: 15px 30px; background: #d3b668; color: black; border-radius: 12px; }
 
-footer { text-align: center; color: white; margin-top: 50px; font-style: italic; opacity: 0.8; }
+footer { text-align: center; color: rgb(39, 37, 30); margin-top: 50px; font-style: italic; opacity: 0.8; }
 
 @keyframes aparecer {
   from { opacity: 0; transform: scale(0.8); }
