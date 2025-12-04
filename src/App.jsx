@@ -72,7 +72,7 @@ function App() {
               placeholder="Escribe un nombre"
               className="input-nombre"
             />
-            <button type="submit" className="btn-agregar">+ Agregar</button>
+            <button type="submit" className="btn-agregar">Agregar</button>
           </form>
 
           {/* Fecha límite */}
